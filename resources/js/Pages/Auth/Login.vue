@@ -29,13 +29,21 @@
             <Link v-if="canResetPassword" :href="route('password.request')" class="underline text-sm text-gray-600 hover:text-gray-900">
                 Forgot your password?
             </Link>
-
+            <Link :href="route('register')" class="register-link underline text-sm text-gray-600 hover:text-gray-900">
+                Register
+            </Link>
             <BreezeButton class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                 Log in
             </BreezeButton>
         </div>
     </form>
 </template>
+
+<style scoped>
+.register-link {
+    margin-left: 10px;
+}
+</style>
 
 <script>
 import BreezeButton from '@/Components/Button.vue'

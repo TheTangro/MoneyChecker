@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Foundation\Application;
+use App\Models\Import\Sources\FilesystemProvider;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -23,5 +23,11 @@ Route::get('/history', function () {
     return Inertia::render('Main/History');
 })->middleware(['auth', 'verified'])->name('history');
 
+
+Route::get('/test', function (\App\Import\ImportSourceInterface $sourceLocator) {
+    foreach ($sourceLocator->getItems() as $item) {
+        $d = 5;
+    }
+})->name('history');
 
 require __DIR__.'/auth.php';

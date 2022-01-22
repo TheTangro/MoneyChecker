@@ -1,6 +1,6 @@
 /node_modules
-/public/hot
-/public/storage
+/pub/hot
+/pub/storage
 /storage/*.key
 /vendor
 .env
@@ -13,5 +13,5 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
-/public/css/
-/public/js/
+/pub/css/
+/pub/js/

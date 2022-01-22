@@ -12,7 +12,9 @@
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.8",
         "laravel/tinker": "^2.5",
-        "tightenco/ziggy": "^1.0"
+        "league/flysystem-webdav": "^1.0",
+        "tightenco/ziggy": "^1.0",
+        "ext-xml": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
